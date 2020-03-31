@@ -26,7 +26,7 @@
         <!-- 数据库连接 -->
         <druid_version>1.1.20</druid_version>
         <mysql.version>8.0.18</mysql.version>
-        <shiro_version>1.4.1</shiro_version>
+        <shiro_version>1.5.2</shiro_version>
         <!-- commons包 -->
         <commons-fileupload_version>1.4</commons-fileupload_version>
         <commons-lang3.version>3.9</commons-lang3.version>

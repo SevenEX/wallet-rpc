@@ -84,6 +84,16 @@ spring.kafka.bootstrap-servers
     ```
 
  2. 将各个模块target文件夹下的XX.jar上传到自己的服务器
+ 
+ 3. 将各个项目下的libs放到同级目录下ZTuo_wallet_rpc/bitcoin/target/libs，目录如下
+ 
+     ```
+     [root@data bitcoin]# ll
+     总用量 1584
+     -rwxrwxrwx. 1 root root 1599268 3月   4 19:15 bitcoin.jar
+     drwxr-xr-x. 2 root root   20480 2月  27 16:51 libs
+     -rwxrwxrwx. 1 root root       0 11月  1 09:56 setenv.sh
+     ```
 
  3. 先启动cloud模块，再启动bitcoin
 

@@ -39,3 +39,54 @@
 7.wallet-mbg
 
 * mybatis相关
+
+## 修改服务配置文件
+请根据服务实际部署情况修改以下配置。配置文件位置如下，如果配置文件中没有某一项配置，说明该模块未使用到该项功能，无需添加：
+
+```
+各个模块/src/main/resources/dev/application.properties
+```
+
+mysql数据库:
+
+```
+spring.datasource.**
+```
+
+reids
+
+```
+redis.**
+```
+
+mongodb(主要存储K线图相关数据)
+
+```
+spring.data.mongodb.uri
+```
+
+kafka
+
+```
+spring.kafka.bootstrap-servers
+```
+
+### 服务启动
+ 1. maven构建打包服务
+
+    ```
+    cd /项目路径/framework
+    mvn clean package
+    ```
+
+ 2. 将各个模块target文件夹下的XX.jar上传到自己的服务器
+
+ 3. 先启动cloud模块，再启动bitcoin
+
+ 4. 启动服务
+
+    例：
+
+    ```
+    nohup  java  -jar  /自己的jar包路径/cloud.jar  >/dev/null 2>&1 &
+    ```

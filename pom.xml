@@ -25,7 +25,7 @@
         <swagger.version>1.5.21</swagger.version>
         <!-- 数据库连接 -->
         <druid_version>1.1.20</druid_version>
-        <mysql.version>8.0.18</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
         <shiro_version>1.4.2</shiro_version>
         <!-- commons包 -->
         <commons-fileupload_version>1.4</commons-fileupload_version>
